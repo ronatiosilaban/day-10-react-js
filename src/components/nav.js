@@ -1,29 +1,19 @@
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 export default function Navigasi() {
     return(
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">WGS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/contact">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-        
-        </ul>
-      </div>
-    </div>
-  </nav>
+<Navbar bg="primary" variant="dark">
+<Container>
+  <Navbar.Brand href="#home">WGS</Navbar.Brand>
+  <Nav className="me-auto">
+    <Nav.Link href="/home">Home</Nav.Link>
+    <Nav.Link href="/contact">Contact</Nav.Link>
+    <Nav.Link href="/about">About</Nav.Link>
+  </Nav>
+</Container>
+</Navbar>
     )
     
 }
