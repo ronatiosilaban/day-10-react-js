@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import App from "./App"
-import data from './data';
+import data from './components/data';
 import Navbar from './components/nav'
 
 

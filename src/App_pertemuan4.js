@@ -2,11 +2,10 @@ import './App.css';
 
 import React from 'react';
 
-
+//menggannti function component menjadi class component
+//pemanggilan data menjadi this.prop.data
 export default class App extends React.Component {
     render (){
-   
-    console.log(this.props.data);
   return(
     <div className='ui container comments'>
        {
