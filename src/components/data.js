@@ -8,7 +8,7 @@ const dataComment =[
           date:"yesterday at 8:00PM",
           comment:"wuihhhh Keren sekali yaa",
           avatar:faker.image.avatar(),
-          count:0
+          
         },
         {
           id:"2",
@@ -16,7 +16,7 @@ const dataComment =[
           date:"yesterday at 8:10PM",
           comment:"Iyaa dong Keren banget woyy",
           avatar:faker.image.avatar(),
-          count:0
+          
         },
         {
           id:"3",
@@ -32,7 +32,7 @@ const dataComment =[
           date:"Today at 10:03PM",
           comment:"manntappu jiwaa",
           avatar:faker.image.avatar(),
-          count:0
+          
         },
       ]
   
