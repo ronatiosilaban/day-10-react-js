@@ -4,7 +4,7 @@ import React from 'react';
 
 //menggannti function component menjadi class component
 //pemanggilan data menjadi this.prop.data
-export default class App extends React.Component {
+export default class Day4 extends React.Component {
     render (){
   return(
     <div className='ui container comments'>

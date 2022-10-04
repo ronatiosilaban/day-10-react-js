@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./components/nav"
 
 function App({name, job}) {
+  console.log(name);
   return (
     <div>    
         <h1>Bootcamp WGS Batch 3</h1>

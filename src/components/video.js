@@ -4,6 +4,7 @@ import Search from "./videosearch";
 import VideoList from "./videoList";
 import VideoDetail from './videoDetail';
 import '../App.css';
+import Button from "./Button";
 
 export default class Video extends React.Component {
     state={Videos : [],
@@ -24,6 +25,7 @@ export default class Video extends React.Component {
         }
         render() {
             return (
+                <div>
                 <div className='ui container' style={{marginTop: '1em', justifyContent:"center"}}>
                     <Search handleFormSubmit={this.handleSubmit}/>
                     <div className='temp'>
@@ -36,6 +38,19 @@ export default class Video extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div >
+       {
+          this.props.data?.map((item, index) => (
+      <div key={index}>
+
+          <Button item ={item} index ={index}/>
+        </div>
+   
+         ))
+        }
+       </div>
+    
                 </div>
             )
         }
