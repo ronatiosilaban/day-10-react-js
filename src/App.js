@@ -10,6 +10,7 @@ import Day7 from './day7'
 import Day8 from './day8'
 import Day9 from './day9'
 import Day10 from './day10'
+import Day11 from './day11'
 import data from './components/data'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <Route path="/day8" element={<Day8/>} />
     <Route path="/day9" element={<Day9 data={data}/>} />
     <Route path="/day10" element={<Day10/>} />
+    <Route path="/day11" element={<Day11/>} />
     </Routes>
     </>
     );

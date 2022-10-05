@@ -5,7 +5,6 @@ const VideoDetail = ({video}) => {
     if (!video) {
         return <div className='loading'>Loading ...</div>;
     }
-
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
     console.log(typeof(video));
     return (
