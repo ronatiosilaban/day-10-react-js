@@ -8,7 +8,7 @@ import data from './components/data'
 function App() {
   return(
     <div>
-    <Video data={data}/>
+    <Video />
     </div>
   )
 };
