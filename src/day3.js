@@ -2,8 +2,9 @@
 import './App.css';
 import {faker} from "@faker-js/faker"
 
-
+//membuat tamplian comment
 function App() {
+  //variable array untuk menampung data yang akan dipakai
   const data =[
     {
       name:"ronatio",
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className='ui container comments'>
        {
-        
+        //mapping data dari variable array diatas
           data?.map((item, index) => (
       <div className='comment' key={index}>
         <a href='/' className='avatar'>

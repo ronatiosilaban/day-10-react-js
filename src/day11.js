@@ -6,6 +6,7 @@ import data from './components/data'
 
 //react ref
 function App() {
+  //membuat tampilan youtube menggunakan API Youtube dengan metode State
   return(
     <div>
     <Video />

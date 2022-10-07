@@ -1,8 +1,9 @@
 import React from "react";
 
-// Membuat class Clock
+
 class Form extends React.Component {
     constructor(props){
+        //state untuk menampung setiap perubahan data yang diinput
         super(props);
         this.state = { 
             name: "",
@@ -13,11 +14,11 @@ class Form extends React.Component {
         // this.handleChangeComment = this.handleChangeComment.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
+    //funtion untuk mengambil value yang diinputkan
     handleChange(event) {
         this.setState({[event.target.name]: event.target.value});
     }
-    
+    //untuk menampilkan alert yang berisikan data yang diinputkan saat user mengklik submit
     handleSubmit(event) {
         alert(`Thankyou ${this.state.name}, For your comment : ${this.state.comment}`);
         event.preventDefault();
@@ -38,6 +39,7 @@ class Form extends React.Component {
                     Comment:
                     <textarea 
                         name='comment'
+                        //onChange untuk mengambil setiap ada perubahan value dari inputtan
                         value={this.state.value}
                         onChange={this.handleChange} />
                 </label>

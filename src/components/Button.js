@@ -1,12 +1,14 @@
 import {useState} from "react"
 
 export default function Button(item, index) {
+  //state untuk menghandel like dan menampung data saat uses menklik like
     const [counter, setCounter] = useState(0)
     function add() {
         setCounter(counter + 1)
 
     }
     console.log(item);
+    //menerima data yang dikirim dari App.js
     return(
         <div className='ui container comments'>
        <div className='comment' key={index}>

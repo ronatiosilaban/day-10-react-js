@@ -4,9 +4,7 @@ import './App.css';
 import {useState, useEffect} from 'react'
 
 function App() {
-//   const [color,setColor] = useState("red")
-
-// const [cl]
+//membuat tampilan jam statis yang berubah-rubah setiap ada perubahan waktu
 const [date, setDate] = useState(new Date());
   
 function refreshClock() {

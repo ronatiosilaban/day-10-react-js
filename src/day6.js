@@ -2,8 +2,7 @@ import './App.css';
 import Time from './components/clock';
 import React from 'react';
 
-//menggannti function component menjadi class component
-//pemanggilan data menjadi this.prop.data
+//memanggil function Time
 function App() {
   return(
     <div>
