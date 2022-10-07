@@ -68,7 +68,8 @@ const VideoList = ({ videos, handleVideoSelect }) => {
 		);
 	});
 
-	return <div className='ui relaxed divided list'>{renderedList}</div>;
+	return <div className='ui relaxed divided list'
+	>{renderedList}</div>;
 };
 
 const useVideos = (defaultSearchTerm) => {
