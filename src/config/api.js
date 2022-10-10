@@ -9,15 +9,20 @@
 // })
 
 import axios from 'axios';
-const KEY ='AIzaSyBsVTtuy_ymdFd2jHrOC62EC-LeIgU4dHc'
+// const KEY ='AIzaSyBsVTtuy_ymdFd2jHrOC62EC-LeIgU4dHc'
+
+
+// export const API = axios.create({
+//     baseURL: "https://www.googleapis.com/youtube/v3",
+//     params:{
+//         part: "snippet",
+//         type: "video",
+//         maxResults: 6,
+//         key: KEY,
+//     },
+// })
 
 
 export const API = axios.create({
-    baseURL: "https://www.googleapis.com/youtube/v3",
-    params:{
-        part: "snippet",
-        type: "video",
-        maxResults: 6,
-        key: KEY,
-    },
+    baseURL : "https://jsonplaceholder.typicode.com"
 })

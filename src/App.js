@@ -1,17 +1,17 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import Navbar from './components/nav'
-import Day2 from './day2'
-import Day3 from './day3'
-import Day4 from './day4'
-import Day5 from './day5'
-import Day6 from './day6'
-import Day7 from './day7'
-import Day8 from './day8'
-import Day9 from './day9'
-import Day10 from './day10'
-import Day11 from './day11'
-import Day12 from './day12'
+import Day2 from './pages/day2'
+import Day3 from './pages/day3'
+import Day4 from './pages/day4'
+import Day5 from './pages/day5'
+import Day6 from './pages/day6'
+import Day7 from './pages/day7'
+import Day8 from './pages/day8'
+import Day9 from './pages/day9'
+import Day10 from './pages/day10'
+import Day11 from './pages/day11'
+import Day12 from './pages/day12'
 import data from './components/data'
 
 function App() {

@@ -31,6 +31,7 @@ class Time extends React.Component {
         return (
             <div>
                 <h3>Time:</h3>
+                {/* untuk merubah format waktu menjadi waktu setempat */}
                 <h4>{this.state.date.toLocaleTimeString()}</h4>
             </div>
         )

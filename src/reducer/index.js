@@ -1,7 +1,7 @@
 
 import { combineReducers } from "redux";
 
-
+//untuk menhandle action yang akan dilakukan dan akan disimpan di redux
 const changeNumber =(state = 0, action)=>{
     switch (action.type) {
         case "INCREMENT":

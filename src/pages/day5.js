@@ -4,6 +4,7 @@ import React from 'react';
 
 //menggannti function component menjadi class component
 //pemanggilan data menjadi this.prop.data
+//membuat button like
 export default class App extends React.Component {
     render (){
   return(

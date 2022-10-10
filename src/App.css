@@ -104,3 +104,7 @@
 .temp{
   margin-left: 30px;
 }
+
+.bold{
+  border-bottom: 1px solid gray;
+}

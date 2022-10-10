@@ -1,6 +1,7 @@
 
 import './App.css';
-import Navbar from "./components/nav"
+
+//menerima data yang dikirim dari index.js
 
 function App({name, job}) {
   console.log(name);
