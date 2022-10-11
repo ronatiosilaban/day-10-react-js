@@ -1,8 +1,8 @@
-import './App.css';
-import Image from './components/image';
+import '../App.css'
+import Image from '../components/image';
 import React from 'react';
-import Video from './components/funcVideo';
-import data from './components/data'
+import Video from '../components/funcVideo';
+import data from '../components/data'
 
 //react ref
 function App() {

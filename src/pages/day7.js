@@ -1,5 +1,5 @@
-import './App.css';
-import Form from './components/form';
+import '../App.css'
+import Form from '../components/form';
 import React from 'react';
 
 //memanggil data form

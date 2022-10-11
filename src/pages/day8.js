@@ -1,5 +1,5 @@
-import './App.css';
-import Image from './components/image';
+import '../App.css'
+import Image from '../components/image';
 import React from 'react';
 
 //react ref

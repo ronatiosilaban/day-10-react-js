@@ -1,5 +1,5 @@
-import './App.css';
-import Button from './components/Button';
+import '../App.css'
+import Button from '../components/Button';
 import React from 'react';
 
 //menggannti function component menjadi class component

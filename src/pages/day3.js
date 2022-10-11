@@ -1,5 +1,5 @@
 
-import './App.css';
+import '../App.css'
 import {faker} from "@faker-js/faker"
 
 //membuat tamplian comment

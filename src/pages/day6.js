@@ -1,5 +1,5 @@
-import './App.css';
-import Time from './components/clock';
+import '../App.css'
+import Time from '../components/clock';
 import React from 'react';
 
 //memanggil function Time

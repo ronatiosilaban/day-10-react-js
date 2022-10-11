@@ -12,6 +12,7 @@ import Day9 from './pages/day9'
 import Day10 from './pages/day10'
 import Day11 from './pages/day11'
 import Day12 from './pages/day12'
+import Day13 from './pages/day13'
 import data from './components/data'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <Route path="/day10" element={<Day10/>} />
     <Route path="/day11" element={<Day11/>} />
     <Route path="/day12" element={<Day12/>} />
+    <Route path="/day13" element={<Day13/>} />
     </Routes>
     </>
     );

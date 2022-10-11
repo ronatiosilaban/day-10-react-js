@@ -1,5 +1,5 @@
 
-import './App.css';
+import '../App.css'
 
 //menerima data yang dikirim dari index.js
 
