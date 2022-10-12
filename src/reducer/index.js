@@ -1,23 +1,15 @@
 
 import { combineReducers } from "redux";
-
+import changeForm from "./form";
+import changeNumber from "./inrement";
 //untuk menhandle action yang akan dilakukan dan akan disimpan di redux
-const changeNumber =(state = 0, action)=>{
-    switch (action.type) {
-        case "INCREMENT":
-           return state+1
-        case "DECREMENT":
-            return state-1
-        case "RESET":
-            return state=0
-        default:
-            return state
-    }
-}
+
+
 
 
 const rootReducer = combineReducers({
-    changeNumber
+    decrement : changeNumber,
+    form : changeForm
 })
 
 export default rootReducer;

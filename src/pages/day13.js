@@ -3,15 +3,28 @@ import React from 'react'
 
 import Styles from './styled'
 import { Form, Field } from 'react-final-form'
+import { useDispatch } from 'react-redux'
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-const onSubmit = async values => {
-  await sleep(300)
-  window.alert(JSON.stringify(values, 0, 2))
-}
 
-const Days = () => {
+const FinalForms = () => {
+  const dispatch = useDispatch()
+
+  const New = async (data)=>{
+    dispatch({ type: 'INPUT', payload: data });
+   
+  
+  }
+
+  const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+  
+  const onSubmit = async values => {
+    await sleep(300)
+    New(values)
+    window.alert(JSON.stringify(values, 0, 2))
+  }
+
+ 
   return(
 <div>
 
@@ -171,4 +184,8 @@ const Days = () => {
 )
 }
 
-export default Days
+
+
+
+
+export default FinalForms
