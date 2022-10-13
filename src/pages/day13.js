@@ -4,12 +4,27 @@ import React from 'react'
 import Styles from './styled'
 import { Form, Field } from 'react-final-form'
 import { useDispatch } from 'react-redux'
+// import filePath from 
+import { useState,useEffect } from 'react'
 
-
-
+import { API } from '../config/api'
 const FinalForms = () => {
   const dispatch = useDispatch()
+  const [posts, setPosts] = useState([]);
 
+
+  useEffect(() => {
+    const fetchPost = async () => {
+       let response = await API.get('/posts');
+       setPosts(response.data);
+    };
+    fetchPost();
+ }, []);
+
+
+
+
+  console.log('llll', posts);
   const New = async (data)=>{
     dispatch({ type: 'INPUT', payload: data });
    
@@ -21,6 +36,11 @@ const FinalForms = () => {
   const onSubmit = async values => {
     await sleep(300)
     New(values)
+    const fetchPost = async () => {
+      let response = await API.post('/posts', values);
+      setPosts(response.data);
+   };
+   fetchPost()
     window.alert(JSON.stringify(values, 0, 2))
   }
 

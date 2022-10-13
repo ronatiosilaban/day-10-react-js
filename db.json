@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "stooge": "larry",
+      "employed": true,
+      "firstName": "Ronatio",
+      "lastName": "rona",
+      "Education": "Barchelor",
+      "expretise": [
+        "HTML"
+      ],
+      "Prefered": [
+        "Fullstack"
+      ],
+      "notes": "sssss",
+      "id": 1
+    }
+  ]
+}
